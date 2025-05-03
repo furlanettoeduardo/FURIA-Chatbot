@@ -1,0 +1,6 @@
+.chat-container { max-height: 400px; overflow-y: auto; }
+.message { margin: 8px 0; }
+.user-msg { text-align: right; }
+.bot-msg { text-align: left; }
+.input-container { display: flex; gap: 8px; margin-top: 16px; }
+textarea { flex: 1; }
