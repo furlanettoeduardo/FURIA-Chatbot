@@ -14,6 +14,12 @@
   justify-content: center;
 }
 
+.hero-left img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+}
+
 .hero-left, .hero-right {
   width: 50%;
   display: flex;
@@ -21,29 +27,27 @@
   justify-content: center;
 }
 
-.hero-left img {
-  max-width: 90%;
-  height: auto;
-  border-radius: 12px;
-}
-
 .background-image {
   width: 100%;
   height: 100%;
   object-fit: cover; 
-  border-radius: 12px;  
+  border-radius: 12px; 
 }
 
 .overlay-image {
-  position: absolute; 
-  top: 46px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  
-  pointer-events: none; 
-  border-radius: 12px; 
+  position: absolute;
+  top: 62.7%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  width: 60%; /* Ajuste o tamanho conforme necessário */
+  height: 60%; /* Ajuste o tamanho conforme necessário */
+  object-fit: cover;
+  pointer-events: none;
+  border-radius: 12px;
+  transform: translate(-50%, -50%); /* Ajusta o alinhamento exato no centro */
+  z-index: 1; /* Garante que a overlay esteja sobre a imagem de fundo */
 }
+
+
 
 .hero-right {
   width: 50%;
@@ -55,7 +59,7 @@
 .hero-right h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #FFD700;
+  color: white;
 }
 
 .hero-right p {
@@ -68,6 +72,58 @@
   background: #1c1c1c;
   color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.chat-box {
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 1rem;
+  background: #333;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chat-message {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 15px;
+  max-width: 75%;
+  word-wrap: break-word;
+  font-size: 1.1rem;
+}
+
+.chat-message img {
+  width: 25px;  /* Tamanho pequeno do avatar */
+  height: 25px;  /* Mantém a imagem pequena */
+  border-radius: 30%; /* Faz a imagem ficar redonda */
+  margin-right: 10px;
+}
+
+.from-user {
+  background: #4caf50;
+  align-self: flex-end;
+  text-align: right;
+  color: white;
+  border-radius: 20px 20px 0 20px;
+}
+
+.from-bot {
+  background: #555;
+  align-self: flex-start;
+  text-align: left;
+  color: white;
+  border-radius: 20px 20px 20px 0;
 }
 
 textarea {
@@ -77,12 +133,12 @@ textarea {
   border-radius: 8px;
   border: none;
   resize: vertical;
+  margin-bottom: 1rem;
 }
 
 button {
-  margin-top: 1rem;
   padding: 0.8rem 2rem;
-  background: #FFD700;
+  background: #4caf50;
   border: none;
   font-weight: bold;
   font-size: 1rem;
@@ -91,7 +147,7 @@ button {
 }
 
 button:hover {
-  background: #e6c200;
+  background: #3f9b42;
 }
 
 pre {
