@@ -23,7 +23,7 @@ export class ChatbotComponent {
       this.messages.push({ text: this.prompt, isUser: true });
 
       // Envia a mensagem para o servidor
-      this.http.post<any>('http://localhost:3000/chat', {
+      this.http.post<any>('https://b06f-177-74-76-21.ngrok-free.app', {
         prompt: this.prompt
       }).subscribe(res => {
         // Adiciona a resposta do bot
