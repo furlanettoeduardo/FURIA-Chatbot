@@ -5,6 +5,6 @@ import { ChatbotComponent } from './chatbot/chatbot.component';
   selector: 'app-root',
   standalone: true,
   imports: [ChatbotComponent],
-  template: `<app-chatbot></app-chatbot>`,
+  template: `<app-chatbot></app-chatbot>`
 })
 export class AppComponent {}

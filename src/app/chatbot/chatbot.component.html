@@ -1,4 +1,18 @@
-<h2>Chat com LLaMA 3</h2>
-<textarea [(ngModel)]="prompt" rows="4" cols="50"></textarea><br>
-<button (click)="sendMessage()">Enviar</button>
-<pre>{{ response }}</pre>
+<div class="hero-section">
+    <div class="hero-left">
+      <img src="assets/background-picture.png" alt="FURIA CS Bot" />
+      <img src="assets/fallen.webp" alt="Nova Imagem" class="overlay-image" />
+    </div>
+    <div class="hero-right">
+      <h1>FURIA CS Bot</h1>
+      <p>Seu assistente oficial para tudo sobre o time de CS:GO da FURIA</p>
+    </div>
+  </div>
+  
+  <!-- Aqui continua o chat -->
+  <div class="chat-container">
+    <textarea [(ngModel)]="prompt" rows="4" cols="50" placeholder="Digite sua pergunta..."></textarea><br />
+    <button (click)="sendMessage()">Enviar</button>
+    <pre>{{ response }}</pre>
+  </div>
+  

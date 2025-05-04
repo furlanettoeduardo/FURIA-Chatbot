@@ -7,7 +7,8 @@ import { CommonModule } from '@angular/common';
   selector: 'app-chatbot',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './chatbot.component.html'
+  templateUrl: './chatbot.component.html',
+  styleUrls: ['./chatbot.component.css']
 })
 export class ChatbotComponent {
   prompt = '';

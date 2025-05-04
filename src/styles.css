@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Sofia Sans', sans-serif;
+  }
+
+  /* Remove margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Garante que a página ocupe 100% do espaço sem margem */
+  html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Fundo preto se necessário */
+    font-family: 'Sofia Sans', sans-serif;
+  }
+  
+  
