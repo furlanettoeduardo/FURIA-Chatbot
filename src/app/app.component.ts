@@ -1,32 +1,10 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { Component } from '@angular/core';
+import { ChatbotComponent } from './chatbot/chatbot.component';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  standalone: true,
+  imports: [ChatbotComponent],
+  template: `<app-chatbot></app-chatbot>`
 })
-export class AppComponent {
-  prompt = '';
-  response = '';
-
-  // Modificar a declaração de messageInput para usar a asserção !
-  @ViewChild('messageInput') messageInput!: ElementRef;
-
-  constructor(private http: HttpClient) {}
-
-  sendMessage() {
-    const apiUrl = 'https://b06f-177-74-76-21.ngrok-free.app/chat'; // Substitua com o URL do seu ngrok
-    this.http.post<any>(apiUrl, { prompt: this.prompt }).subscribe(res => {
-      this.response = res.response;
-
-      // Limpar a caixa de entrada de texto
-      this.prompt = '';
-
-      // Focar o campo de entrada de texto novamente
-      this.messageInput.nativeElement.focus();
-    });
-  }
-}
+export class AppComponent {}
