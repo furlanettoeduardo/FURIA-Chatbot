@@ -1,6 +1,3 @@
-### **Frontend – Angular**  
-
-
 # Frontend – Angular
 
 Este repositório contém o frontend da aplicação, construída com Angular, para interagir com o backend que utiliza o modelo `llama3` da Ollama.
