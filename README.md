@@ -1,6 +1,6 @@
 # Frontend – Angular
 
-Este repositório contém o frontend da aplicação, construída com Angular, para interagir com o backend que utiliza o modelo `llama3` da Ollama.
+Este repositório contém o frontend da aplicação, construída com Angular, para interagir com o backend(https://github.com/furlanettoeduardo/chatbot-furia-backend) que utiliza o modelo `llama3` da Ollama.
 
 ## 🛠️ Instalação e Execução Local
 
