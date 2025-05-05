@@ -18,7 +18,7 @@
     </div>
   </div>
 
-  <textarea [(ngModel)]="prompt" rows="4" cols="50" placeholder="Digite sua pergunta..." (keyup.enter)="sendMessage()"></textarea><br />
+  <textarea #messageInput [(ngModel)]="prompt" rows="4" cols="50" placeholder="Digite sua pergunta..."></textarea><br />
   <button (click)="sendMessage()">Enviar</button>
-</div>
-
+  <pre>{{ response }}</pre>
+  
