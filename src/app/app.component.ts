@@ -18,7 +18,7 @@ export class AppComponent {
   constructor(private http: HttpClient) {}
 
   sendMessage() {
-    const apiUrl = 'https://abc123.ngrok.io/chat'; // Substitua com o URL do seu ngrok
+    const apiUrl = 'https://b06f-177-74-76-21.ngrok-free.app/chat'; // Substitua com o URL do seu ngrok
     this.http.post<any>(apiUrl, { prompt: this.prompt }).subscribe(res => {
       this.response = res.response;
 
